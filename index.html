@@ -1,112 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paradigm | Home</title>
-<link rel="stylesheet" href="assets/css/main.css" />
-</head>
-
-<body>
-
-<header>
-  <div class="container nav">
-    <h1 class="logo">Paradigm</h1>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+<header id="main-header">
+    <div class="container">
+        <div class="logo">
+            <h1>Paradigm<span>Shift</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-
-<section class="hero">
-
-  <div class="hero-left">
-    <h1>Paradigm<br>Shift</h1>
-    <p>A FREE RESPONSIVE SITE TEMPLATE</p>
-    <div class="arrow">↓</div>
-  </div>
-
-  <div class="hero-right">
-    <img src="images/hero.jpg" alt="Hero Image">
-  </div>
-
-</section>
-
-
-<section class="section about-preview">
-  <div class="container two-col">
-
-    <div>
-      <h2>About Us</h2>
-      <p>This portfolio style website is built using HTML and CSS only.</p>
-      <a class="btn" href="about.html">Learn More</a>
+<footer id="main-footer">
+    <div class="container">
+        <p>&copy; 2026 Paradigm Shift. All images from provided assets. Built with HTML & CSS.</p>
     </div>
-
-  </div>
-</section>
-
-
-<section class="section features">
-
-  <div class="container cards">
-
-    <div class="card">
-      <h3>Modern Design</h3>
-      <p>Clean and minimal layouts.</p>
-    </div>
-
-    <div class="card">
-      <h3>Responsive</h3>
-      <p>Works on desktop and mobile devices.</p>
-    </div>
-
-    <div class="card">
-      <h3>Simple Code</h3>
-      <p>Built with only HTML and CSS.</p>
-    </div>
-
-  </div>
-
-</section>
-
-
-<section class="section gallery-preview">
-
-  <div class="container grid">
-
-    <img src="images/01.jpg" alt="01">
-<img src="images/02.jpg" alt="02">
-<img src="images/03.jpg" alt="03">
-<img src="images/04.jpg" alt="04">
-<img src="images/05.jpg" alt="05">
-<img src="images/06.jpg" alt="06">
-
-
-  </div>
-
-</section>
-
-
-<section class="cta">
-  <h2>Explore Our Full Gallery</h2>
-  <a class="btn" href="gallery.html">View Gallery</a>
-</section>
-
-
-<footer>
-  <div class="container">
-    <p>© 2026 Paradigm Portfolio Website</p>
-  </div>
 </footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Paradigm Shift Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Paradigm<span>Shift</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="images/pic01.jpg" alt="Hero Image 1">
+                    <div class="hero-text">
+                        <h2>Modern Design</h2>
+                        <p>Experience the new paradigm of digital portfolios.</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section class="about-preview section-padding">
+            <div class="container split-layout">
+                <div class="image-side">
+                    <img src="images/pic02.jpg" alt="About Us">
+                </div>
+                <div class="text-side">
+                    <h2>Who We Are</h2>
+                    <p>We specialize in creating clean, responsive, and high-impact web designs that tell a story.</p>
+                    <a href="about.html" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section-padding gray-bg">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Strategy</h3>
+                        <p>Defining your digital path from the ground up.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Design</h3>
+                        <p>Beautiful interfaces crafted for every screen size.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Launch</h3>
+                        <p>Getting your project live and ready for the world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-preview section-padding">
+            <div class="container">
+                <h2 class="section-title">Featured Work</h2>
+                <div class="preview-grid">
+                    <img src="images/pic03.jpg" alt="Work 1">
+                    <img src="images/pic04.jpg" alt="Work 2">
+                    <img src="images/pic05.jpg" alt="Work 3">
+                    <img src="images/pic06.jpg" alt="Work 4">
+                    <img src="images/pic07.jpg" alt="Work 5">
+                    <img src="images/pic08.jpg" alt="Work 6">
+                </div>
+                <div class="center-btn">
+                    <a href="gallery.html" class="btn-primary">View Full Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section-padding accent-bg">
+            <div class="container">
+                <h2>Ready to start your project?</h2>
+                <p>Contact us today for a free consultation.</p>
+                <a href="contact.html" class="btn-white">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Paradigm Shift. All images from assets. Built with HTML & CSS.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
-
