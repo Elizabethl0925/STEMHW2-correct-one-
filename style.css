@@ -112,3 +112,151 @@ nav ul li a.active {
         margin: 0 10px;
     }
 }
+
+/* --- Hero Slider (CSS Only) --- */
+.hero-slider {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    background: #000;
+}
+
+.slider-container, .slide {
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Darkens image to make text readable */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+/* --- Split Layout (About Preview & About Page) --- */
+.split-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.split-layout .image-side,
+.split-layout .text-side {
+    flex: 1;
+}
+
+.split-layout.reverse {
+    flex-direction: row-reverse;
+}
+
+.split-layout img {
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* --- Services Card Grid --- */
+.gray-bg {
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    border-bottom: 4px solid #52c2b8;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* --- Preview Grid (Home) & Main Grid (Gallery) --- */
+.preview-grid, .main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.preview-grid img, .main-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+}
+
+.preview-grid img:hover, .main-grid img:hover {
+    opacity: 0.8;
+}
+
+.center-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* --- CTA Section --- */
+.accent-bg {
+    background-color: #52c2b8;
+    color: #fff;
+    text-align: center;
+}
+
+.btn-white {
+    display: inline-block;
+    background: #fff;
+    color: #52c2b8;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* --- Mobile Responsiveness (Layer 2) --- */
+@media (max-width: 992px) {
+    .card-grid, .preview-grid, .main-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .split-layout, .split-layout.reverse {
+        flex-direction: column;
+    }
+    .card-grid, .preview-grid, .main-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-text h2 {
+        font-size: 2.2rem;
+    }
+}
