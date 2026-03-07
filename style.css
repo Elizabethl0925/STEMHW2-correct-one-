@@ -260,3 +260,80 @@ nav ul li a.active {
         font-size: 2.2rem;
     }
 }
+
+/* --- Contact Page Styles --- */
+.contact-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #52c2b8;
+}
+
+/* --- Gallery Page Refinement --- */
+.gallery-full .main-grid img {
+    height: 300px; /* Slightly taller for the dedicated gallery page */
+    cursor: pointer;
+}
+
+/* --- Typography & Polish --- */
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.page-title {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.page-title h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* --- Footer Polish --- */
+#main-footer {
+    background: #333;
+    color: #aaa;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* --- Smooth Scrolling (Optional but recommended) --- */
+html {
+    scroll-behavior: smooth;
+}
